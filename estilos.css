@@ -11,3 +11,8 @@
     background-color: rgb(209, 209, 209);
     height: 1px;
 }
+
+.carousel-inner{
+    max-height: 120px;
+    width: auto;
+}
