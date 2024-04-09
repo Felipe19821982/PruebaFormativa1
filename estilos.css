@@ -1,3 +1,13 @@
 .fich{
-    margin: 10px 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.linea{
+     font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.rect{
+    background-color: rgb(209, 209, 209);
+    height: 1px;
 }
