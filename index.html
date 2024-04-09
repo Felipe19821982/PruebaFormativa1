@@ -27,11 +27,11 @@
         }
 
         /* Estilos para centrar todo el contenido */
-        body {
+        body {                                   
             text-align: center; /* Centrar todo el contenido */
             margin: 0; /* Elimina el margen predeterminado del cuerpo */
             padding: 0; /* Elimina el relleno predeterminado del cuerpo */
-            background-color: (156, 150, 150); /* Cambiar color de fondo a gris claro */
+            background-color: black /* Cambiar color de fondo a gris claro */
         }
 
         /* Estilos para centrar la lista de integrantes */
@@ -70,10 +70,11 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="Ingresousuario.html">
+
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="">
             <img src="imagenes/logo.jpg" width="150" height="150" class="d-inline-block align-top" alt="">
-            Ingresar
+            
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -82,74 +83,71 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="formulario.html"> <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="Ingresousuario.html"> <span class="sr-only">(current) </span> Ingresar</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html"></a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="fichas.html"> <span class="sr-only">(current) </span> llena tu ficha</a>
                 </li>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+                 
             </ul>
         </div>
     </nav>
     </nav>
-    <h1>TALLER MECANICO RAYO MCQUEEN</h1>
-    <p>Los mejores en la especialidad trabajo 100% seguro</p>
+    <h1 style="color:skyblue;">TALLER MECANICO RAYO MCQUEEN</h1>
+    <p style="color:skyblue">Los mejores en la especialidad trabajo 100% seguro</p>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: auto;">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="imagenes/trabajos.taller1.jpg" class="d-block" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 style="color: red;">Nuestros trabajos!</h5>
-                    <p style="color: white;">a su gusto!.</p>
-                </div>
+                <a href="trabajo1.html">
+                    <img src="imagenes/trabajos.taller1.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: red;">Nuestros trabajos!</h5>
+                        <p style="color: white;">a su gusto!.</p>
+                    </div>
+                </a>
             </div>
             <div class="carousel-item">
-                <img src="imagenes/trabajos.taller2.jpg" class="d-block" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 style="color: red;">Nuestros trabajos </h5>
-                    <p style="color: white;">a su gusto!.</p>
-                </div>
+                <a href="trabajo2.html">
+                    <img src="imagenes/trabajos.taller2.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: red;">Nuestros trabajos </h5>
+                        <p style="color: white;">a su gusto!.</p>
+                    </div>
+                </a>
             </div>
             <div class="carousel-item">
-                <img src="imagenes/trabajos.taller3.jpg" class="d-block" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 style="color: red;">Nuestros trabajos!./</h5>
-                    <p style="color: white;">Sa su gusto!.</p>
-                </div>
-              </div>
+                <a href="trabajo3.html">
+                    <img src="imagenes/trabajos.taller3.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: red;">Nuestros trabajos!./</h5>
+                        <p style="color: white;">Sa su gusto!.</p>
+                    </div>
+                </a>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden"></span>
-            </button>
-        </div>
         
-        <script>
+         <script>
             // Selecciona el carrusel
             var myCarousel = document.querySelector('#carouselExampleIndicators');
             // Crea un nuevo objeto de carrusel de Bootstrap
             var carousel = new bootstrap.Carousel(myCarousel, {
-                interval: 3000 // Cambia las diapositivas cada 2 segundos
+                interval: 3000 // Cambia las diapositivas cada 4 segundos
             });
-        </script>
+         </script>
+       
                 </button>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-            </div>
-            <h1>Nuestros integrantes</h1>
-            <ul class="integrantes">
+        </div>
+        </div>
+
+    
+        <div class="integrantes" style="color: #00bfff;">
+            <h1 style="color:skyblue;">Nuestros integrantes</h1>
+            <ul>
                 <li>Pablo Baez</li>
                 <li>Felipe Madrid</li>
                 <li>Sergio Bravo</li>
-              
-            </ul>
+        </ul>
+        </div>
             
+        
