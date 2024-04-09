@@ -1,1 +1,155 @@
-<HTML:5AS> </HTML:5>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller mecanico rayomcqueen</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <style>
+        /* Eliminar estilos de lista predeterminados */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        /* Estilo para colocar la imagen a la izquierda */
+        li {
+            display: flex; /* Utilizar flexbox para alinear elementos */
+            align-items: center; /* Alinear verticalmente */
+            margin-bottom: 10px; /* Espaciado entre elementos */
+        }
+        li img {
+            margin-right: 10px; /* Espaciado entre imagen y texto */
+            width: 250px; /* Ancho de la imagen (ajusta según necesites) */
+            height: auto; /* Altura automática para mantener la proporción */
+        }
+
+        /* Estilos para centrar todo el contenido */
+        body {
+            text-align: center; /* Centrar todo el contenido */
+            margin: 0; /* Elimina el margen predeterminado del cuerpo */
+            padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+            background-color: (156, 150, 150); /* Cambiar color de fondo a gris claro */
+        }
+
+        /* Estilos para centrar la lista de integrantes */
+        .integrantes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Estilos para centrar la lista de secciones de ayuda */
+        .secciones-ayuda {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Estilos para cambiar tamaño del carrusel */
+        .carousel-item img {
+            width: 100%; /* La imagen ocupará todo el ancho del carrusel */
+            height: auto; /* Altura automática para mantener la proporción */
+        }
+
+        /* Estilos para el título y descripción del carrusel */
+        .carousel-caption {
+            text-align: left; /* Alinear texto a la izquierda */
+            left: 10; /* Posición del texto en relación con el carrusel */
+            width: 80%; /* Ancho del texto */
+            background-color: (0, 0, 0, 0.5); /* Fondo semitransparente */
+            color: white; /* Color del texto */
+            padding: 10px; /* Espaciado interno */
+            margin-top: 20%; /* Posición vertical del texto */
+            transform: translateY(-300%); /* Ajuste fino de la posición vertical */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="imagenes/logo.jpg" width="150" height="150" class="d-inline-block align-top" alt="">
+            Contacto
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="formulario.html"> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"></a>
+                </li>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    </nav>
+    <h1>TALLER MECANICO RAYO MCQUEEN</h1>
+    <p>Los mejores en la especialidad trabajo 100% seguro</p>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: auto;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/trabajos.taller1.jpg" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: red;">Nuestros trabajos!</h5>
+                    <p style="color: white;">a su gusto!.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/trabajos.taller2.jpg" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: red;">Nuestros trabajos </h5>
+                    <p style="color: white;">a su gusto!.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/trabajos.taller3.jpg" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: red;">Nuestros trabajos!./</h5>
+                    <p style="color: white;">Sa su gusto!.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
+            </button>
+        </div>
+        
+        <script>
+            // Selecciona el carrusel
+            var myCarousel = document.querySelector('#carouselExampleIndicators');
+            // Crea un nuevo objeto de carrusel de Bootstrap
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 3000 // Cambia las diapositivas cada 2 segundos
+            });
+        </script>
+                </button>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            </div>
+            <h1>Nuestros integrantes</h1>
+            <ul class="integrantes">
+                <li>Pablo Baez</li>
+                <li>Felipe Madrid</li>
+                <li>Sergio Bravo</li>
+              
+            </ul>
+            
