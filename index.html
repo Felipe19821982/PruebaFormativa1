@@ -57,16 +57,12 @@
         }
 
         /* Estilos para el título y descripción del carrusel */
-        .carousel-caption {
-            text-align: left; /* Alinear texto a la izquierda */
-            left: 10; /* Posición del texto en relación con el carrusel */
-            width: 80%; /* Ancho del texto */
-            background-color: (0, 0, 0, 0.5); /* Fondo semitransparente */
-            color: white; /* Color del texto */
-            padding: 10px; /* Espaciado interno */
-            margin-top: 20%; /* Posición vertical del texto */
-            transform: translateY(-300%); /* Ajuste fino de la posición vertical */
-        }
+
+
+        .carousel {
+        width: 80%; /* Ancho del carrusel */
+        margin: auto; /* Centrar horizontalmente */
+    }
     </style>
 </head>
 <body>
@@ -95,36 +91,40 @@
     </nav>
     <h1 style="color:skyblue;">TALLER MECANICO RAYO MCQUEEN</h1>
     <p style="color:skyblue">Los mejores en la especialidad trabajo 100% seguro</p>
+    <p style="color:skyblue">nuestros trabajos  ⭣ ⭣ ⭣</p>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: auto;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="trabajo1.html">
-                    <img src="imagenes/trabajos.taller1.jpg" class="d-block" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color: red;">Nuestros trabajos!</h5>
-                        <p style="color: white;">a su gusto!.</p>
-                    </div>
+                    <img class="d-block w-100" src="imagenes/trabajos.taller1.jpg" alt="First slide">
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="trabajo2.html">
-                    <img src="imagenes/trabajos.taller2.jpg" class="d-block" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color: red;">Nuestros trabajos </h5>
-                        <p style="color: white;">a su gusto!.</p>
-                    </div>
+                    <img class="d-block w-100" src="imagenes/trabajos.taller2.jpg" alt="Second slide">
                 </a>
             </div>
             <div class="carousel-item">
                 <a href="trabajo3.html">
-                    <img src="imagenes/trabajos.taller3.jpg" class="d-block" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 style="color: red;">Nuestros trabajos!./</h5>
-                        <p style="color: white;">Sa su gusto!.</p>
-                    </div>
+                    <img class="d-block w-100" src="imagenes/trabajos.taller3.jpg" alt="Third slide">
                 </a>
             </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
         
          <script>
             // Selecciona el carrusel
