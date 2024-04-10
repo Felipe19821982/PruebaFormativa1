@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo1</title>
+    <title>Trabajo camion</title>
     <style>
         body {                                   
             text-align: center; /* Centrar todo el contenido */
@@ -12,7 +12,7 @@
             background-color: black; /* Cambiar color de fondo a negro */
         }
         /* Estilos para centrar el contenido */
-        .trabajo1 {
+        .trabajocam {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -20,10 +20,26 @@
             color: #00bfff; /* Color de texto */
         }
         /* Estilos para la imagen */
-        .trabajo1 img {
-            max-width: 100%; /* Establecer ancho máximo para evitar estiramiento */
+        .trabajocam img {
+            max-width: 50%; /* Establecer ancho máximo para evitar estiramiento */
             height: auto; /* Altura automática para mantener la proporción */
-            margin-bottom: 20px; /* Espaciado inferior */
+        }
+        .volver-button {
+            background-color: #00bfff; /* Color de fondo */
+            color: white; /* Color del texto */
+            border: none; /* Sin borde */
+            padding: 10px 20px; /* Espaciado interno */
+            text-align: center; /* Alinear texto */
+            text-decoration: none; /* Sin subrayado */
+            display: inline-block; /* Mostrar como elemento de bloque */
+            font-size: 16px; /* Tamaño de fuente */
+            margin-top: 20px; /* Espaciado superior */
+            cursor: pointer; /* Cambiar cursor al pasar el mouse */
+            border-radius: 5px; /* Borde redondeado */
+        }
+        /* Estilos para el botón al pasar el mouse */
+        .volver-button:hover {
+            background-color: #0080ff; /* Cambiar color de fondo al pasar el mouse */
         }
         .volver-button {
             background-color: #00bfff; /* Color de fondo */
@@ -45,17 +61,19 @@
     </style>
 </head>
 <body>
-    <div class="trabajo1">
+    <div class="trabajocam">
         <!-- Agrega la imagen -->
-        <img src="Imagenes/trabajo1.jpg" alt="Descripción de la imagen">
-        <h1 style="color:skyblue;">CARRO PERSONALIZADO CON IMAGEN DE RAYO MCQUEEN!!</h1>
+        <img src="Imagenes/camion1.jpg" alt="Descripción de la imagen">
+        <h1 style="color:skyblue;">CAMION PERSONALIZADO DEL RAYO MCQUEENN!!!</h1>
         
-            <li>Fecha de trabajo: 09-04-2024.</li>
+        
+            <li> Fecha de trabajo: 10-04-2024.</li>
             <li>Materiales usados:pintura,llantas.</li>
-            <li>Cambios realizados: color de auto, llantas, imagen de rayo mcqueen.</li>
+            <li>Cambios realizados: color de auto, llantas, imagen de rayo mcqueen .</li>
             <li>Diagnostico de mecanico:perfecto estado.</li>
-            <a href="index.html" class="volver-button">Volver</a>
-         
+        
+
+        <a href="index.html" class="volver-button">Volver</a>
     </div>
 </body>
 </html>
