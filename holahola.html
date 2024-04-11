@@ -20,6 +20,23 @@
             max-width: 100%;
             height: auto;
         }
+        .volver-button {
+            background-color: #00bfff; /* Color de fondo */
+            color: white; /* Color del texto */
+            border: none; /* Sin borde */
+            padding: 10px 20px; /* Espaciado interno */
+            text-align: center; /* Alinear texto */
+            text-decoration: none; /* Sin subrayado */
+            display: inline-block; /* Mostrar como elemento de bloque */
+            font-size: 16px; /* Tamaño de fuente */
+            margin-top: 20px; /* Espaciado superior */
+            cursor: pointer; /* Cambiar cursor al pasar el mouse */
+            border-radius: 5px; /* Borde redondeado */
+        }
+        /* Estilos para el botón al pasar el mouse */
+        .volver-button:hover {
+            background-color: #0080ff; /* Cambiar color de fondo al pasar el mouse */
+        }
     </style>
 </head>
 <body>
@@ -67,5 +84,8 @@
             alert('Usuario o contraseña incorrectos');
         });
       </script>
+      <div class="text-center"> <!-- Div para centrar el botón -->
+        <a href="index.html" class="volver-button">Volver</a>
+      </div>
 </body>
 </html>
