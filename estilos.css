@@ -16,3 +16,78 @@
     max-height: 120px;
     width: auto;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 20px;
+}
+
+.card-container{
+    display: flex;
+    width: 600px;
+    height: auto;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 2px rgb(0, 0, 0, 0.2);
+}
+
+.header{
+    border-right: 1px solid #ddd;
+}
+
+.descripcion{
+    background-color: white;
+}
+
+.header, .descripcion{
+    padding: 20px;
+    text-align: center;
+}
+
+.heder a {
+    position: relative;
+    display: block;
+}
+
+.heder img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.06);
+    margin: 20px 30px;
+    transition: 0.2s;
+}
+
+.header a:hover img{
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h2{
+    color: rgb(27, 106, 255);
+}
+
+.header h4{
+    margin-bottom: 20px;
+}
+
+.descripcion{
+    position: relative;
+}
+
+.descripcion p{
+    margin: 20px 30px;
+}
+
+.descripcion .social a{
+    display: inline-block;
+    padding: 0 15px;
+}
